@@ -120,14 +120,14 @@ display: block;
 
 main {
 display: flex;
-flex-wrap: wrap;
+flex-wrap: ;
 justify-content: space-between;
 
 }
 
 section {
   flex-basis: calc(33.33% -2em);
-  background-color: #ffbe5a;
+  background-color:#b999be;
   margin-bottom: 2em;
 }
 
