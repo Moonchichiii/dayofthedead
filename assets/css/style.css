@@ -43,22 +43,24 @@ header {
 }
 
 
+/* navigation */
+
 .skull {
   font-size: 5rem;
 }
 
 a, li {
-  display: flex;
-  flex-direction: row;
-  font-family: 'Shantell Sans', cursive;
-  text-decoration: none;
-  list-style: none;
-  color: whitesmoke;
-  font-size: 1.2rem;
+display: flex;
+flex-direction: row;
+font-family: 'Shantell Sans', cursive;
+text-decoration: none;
+list-style: none;
+color: whitesmoke;
+font-size: 1.2rem;
 }
 
 a:hover {
-color: hwb(58 9% 33%);
+color: #ffbe5a;
 transform: skewY(5deg);
 }
 
@@ -109,15 +111,25 @@ transition: max-height 0.5s ease-in-out;
 left: auto;
 bottom: auto;
 display: block;
-
 }
+
+
+
+/* main content section */
+
 
 main {
 display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 
 }
 
-
+section {
+  flex-basis: calc(33.33% -2em);
+  background-color: #ffbe5a;
+  margin-bottom: 2em;
+}
 
 
 
@@ -190,23 +202,6 @@ main {
   align-items: center;
   text-align: center;
 }
-section {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-.bottom-section {
-  display: inline-block;
-  width:auto;
-  padding:20px;
-  margin: auto;
-  background-color: rgba(255, 190, 90,0.2);
-  border-radius: 10px;
-  text-align: center;
-  overflow: auto;
-}
-
 }
 
 /* mobile landscape */
@@ -223,24 +218,7 @@ section {
     margin-left: auto;
     align-items: center;
     text-align: center;
-  }
-  section {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-
-  .bottom-section {
-    display: inline-block;
-    width:auto;
-    padding:20px;
-    margin: auto;
-    background-color: rgba(255, 190, 90,0.2);
-    border-radius: 10px;
-    text-align: center;
-    overflow: auto;
-  }
+ }
 }
 
 /* mobile smaller screens */
@@ -282,6 +260,7 @@ section {
   backdrop-filter: blur(5px);
 
 }
+
 main {
   display: inline-block;
   margin-right: auto;
@@ -289,22 +268,4 @@ main {
   align-items: center;
   text-align: center;
 }
-section {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
 }
-
-.bottom-section {
-  display: inline-block;
-  width:auto;
-  padding:20px;
-  margin: auto;
-  background-color: rgba(255, 190, 90,0.2);
-  border-radius: 10px;
-  text-align: center;
-  overflow: auto;
-}
-
-  }
